@@ -6,13 +6,15 @@
   
   <title>Kubernetes | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="KubernetesKubernetes is a platform that developers can use to manage containers and containerized workspaces at a large scale. It was made open-source by Google in 2014, and it has a vast ecosystem wi">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Kubernetes">
 <meta property="og:url" content="http://example.com/Kubernetes/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="KubernetesKubernetes is a platform that developers can use to manage containers and containerized workspaces at a large scale. It was made open-source by Google in 2014, and it has a vast ecosystem wi">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-17T14:08:45.000Z">
-<meta property="article:modified_time" content="2024-10-17T18:12:10.735Z">
+<meta property="article:modified_time" content="2024-10-17T18:36:33.811Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -91,11 +93,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Kubernetes"><a href="#Kubernetes" class="headerlink" title="Kubernetes"></a>Kubernetes</h1><p>Kubernetes is a platform that developers can use to manage containers and containerized workspaces at a large scale. It was made open-source by Google in 2014, and it has a vast ecosystem with various tools, utilities, etc.</p>
+<h2 id="How-does-Kubernetes-work"><a href="#How-does-Kubernetes-work" class="headerlink" title="How does Kubernetes work?"></a>How does Kubernetes work?</h2><p>Unlike Docker, Kubernetes is more focused on managing containers at scale, instead of focusing on one or two at a time. Kubernetes provides an application programming interface (API) that controls where and how containers run. It schedules containers to run in virtual machines based on resource availability and requirements. Containers are organized into units called “pods”, which users can then scale up and down to fit their needs. Kubernetes can also scale pods automatically, as well as managing resource allocation, balancing workloads, and monitoring the health status of resources and allowing apps to restart or replicate as needed, among other functions.</p>
+<h2 id="The-benefits-of-Kubernetes"><a href="#The-benefits-of-Kubernetes" class="headerlink" title="The benefits of Kubernetes"></a>The benefits of Kubernetes</h2><ul>
+<li>Kubernetes can be used to make applications portable, since they run separately from their infrastructure in containers. This means they can be moved between machines or to a cloud while remaining consistently functional.</li>
+<li>Containerized applications can then be run across a cluster of servers, or multiple clusters of servers, with Kubernetes scaling them automatically to maintain the health of each container. Users can also scale their containers manually with a command.</li>
+<li>Kubernetes has a vast community of users who have made tools and utilities to add more functions to Kubernetes, such as security and monitoring functions.</li>
+<li>Users can give Kubernetes nodes to run containerized tasks in, and specify how much CPU and memory each one can needs. From there, the platform can allocate resources automatically to make the most effective use of them. </li>
+<li>The platform automatically maintains container health by restarting containers that fail and killing any containers that do not respond to user-defined health checks.</li>
+<li>DevOps practices such as CI&#x2F;CD, infrastructure as code, and constant monitoring can be employed in Kubernetes environments, which allows one to keep up with the speed at which their application grows, moving fast in a changing environment.</li>
+</ul>
+<h2 id="Before-Kubernetes…"><a href="#Before-Kubernetes…" class="headerlink" title="Before Kubernetes…"></a>Before Kubernetes…</h2><p>Before virtualization and containerization came to be, applications ran on physical servers. This was difficult to manage because physical servers at the time could not automatically allocate resources, which led to management issues. For example, one application would end up using most of the resources on its respective server, severely impacting the performance of other applications that ran on that server. While one solution to this problem would have been to run every application on a different physical server, this would not have worked out, since resources would go unused, and the organization in question would have to spend a lot of money to maintain that many servers. </p>
+<p>Now, virtualization allows both individual users and organizations to emulate physical servers, which costs less and is easier to maintain, especially with Kubernetes. Kubernetes also prevents underutilization of resources by allocating resources to where they are most needed, increasing functionality without diminishing the performance of other applications in the same virtual machine. Containers can also run inside a virtual machine, providing another layer of security and ease of management and access.</p>
+<h2 id="Kubernetes-versus-Docker"><a href="#Kubernetes-versus-Docker" class="headerlink" title="Kubernetes versus Docker"></a>Kubernetes versus Docker</h2><p>The biggest difference between these two entities is the scale at which they are used. While Docker is most often used to develop containerized applications at a personal level or to publish onto the Docker Hub, Kubernetes is used to manage clusters of containers at a much larger scale. Additionally, while Docker is used to create and run containers, Kubernetes is more oriented towards managing those containers. Finally, the main benefit of Kubernetes is that complex applications can be defined and run at scale, while Docker is beneficial for standardizing operations and shipping code quickly.</p>
+<p>Sources:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-kubernetes/?msockid=0ea882de80cc69ce01fc92c0813168e7#watch-how-kubernetes-works">https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-kubernetes/?msockid=0ea882de80cc69ce01fc92c0813168e7#watch-how-kubernetes-works</a></li>
+<li><a target="_blank" rel="noopener" href="https://kubernetes.io/docs/concepts/overview/">https://kubernetes.io/docs/concepts/overview/</a></li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/Kubernetes/index.html" data-id="cm2dmbuae0003e8p35p0s8xa1" data-title="Kubernetes" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/Kubernetes/index.html" data-id="cm2dn77j30004hnq78zkdhf3j" data-title="Kubernetes" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

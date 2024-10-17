@@ -6,15 +6,21 @@
   
   <title>Docker | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Virtualization and Containerization are both technologies that allow for running multiple environments on a single physical machine, but they have distinct differences, particularly in how they operat">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Docker">
 <meta property="og:url" content="http://example.com/Docker/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Virtualization and Containerization are both technologies that allow for running multiple environments on a single physical machine, but they have distinct differences, particularly in how they operat">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/user-attachments/assets/2786a0aa-4fc4-470a-836a-a32c86341f3f">
+<meta property="og:image" content="https://github.com/user-attachments/assets/5537176c-e415-4274-a86e-e150f7713472">
+<meta property="og:image" content="https://github.com/user-attachments/assets/deb8aae0-2952-4b1d-b840-ee9a210fa6d5">
 <meta property="article:published_time" content="2024-10-17T14:08:05.000Z">
-<meta property="article:modified_time" content="2024-10-17T18:12:10.735Z">
+<meta property="article:modified_time" content="2024-10-17T18:36:33.811Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/user-attachments/assets/2786a0aa-4fc4-470a-836a-a32c86341f3f">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -91,11 +97,23 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>Virtualization and Containerization are both technologies that allow for running multiple environments on a single physical machine, but they have distinct differences, particularly in how they operate and their resource efficiency. Here’s how they compare in the context of Docker (a containerization platform):</p>
+<p><img src="https://github.com/user-attachments/assets/2786a0aa-4fc4-470a-836a-a32c86341f3f" alt="kubernetes-vs-docker-3"></p>
+<h1 id="1-Virtualization"><a href="#1-Virtualization" class="headerlink" title="1. Virtualization"></a>1. Virtualization</h1><p>Definition: Virtualization uses a hypervisor to create and manage virtual machines (VMs), where each VM runs its own complete operating system (OS) and operates in isolation.<br>Architecture: Each virtual machine has a full OS, and the hypervisor sits on top of the host system to manage multiple VMs. The VMs share hardware resources, but each has its own independent OS.<br>Overhead: Virtual machines are resource-heavy because each VM includes not only the application and its dependencies but also a complete OS, which requires CPU, memory, and storage space.<br>Isolation: VMs provide strong isolation because each VM runs in a completely separate environment.<br>Use Case: Typically used when running different OSs or when strict isolation is needed.<br><img src="https://github.com/user-attachments/assets/5537176c-e415-4274-a86e-e150f7713472" alt="virtual"></p>
+<h1 id="2-Containerization"><a href="#2-Containerization" class="headerlink" title="2. Containerization"></a>2. Containerization</h1><p>Definition: Containerization, as implemented in Docker, allows applications to run in isolated environments called containers. Unlike VMs, containers share the host OS’s kernel, but each container operates independently with its own libraries and dependencies.<br>Architecture: Docker containers share the host OS, which means there’s no need for a hypervisor or full OS per container. This makes containers lightweight and efficient.<br>Overhead: Containers are more lightweight because they don’t require a full OS. Only the necessary binaries and libraries for the application are packaged in the container. The host’s kernel is shared across containers.<br>Isolation: Containers provide isolation for applications, but since they share the OS kernel, they offer less isolation than virtual machines.<br>Use Case: Ideal for microservices, scalable applications, and environments where multiple instances of the same OS are needed.<br><img src="https://github.com/user-attachments/assets/deb8aae0-2952-4b1d-b840-ee9a210fa6d5" alt="0_i8OzbS38Oo9-MGcW"></p>
+<h1 id="Docker-and-Containerization"><a href="#Docker-and-Containerization" class="headerlink" title="Docker and Containerization"></a>Docker and Containerization</h1><p>Docker is the most popular containerization platform. It enables developers to create, deploy, and run applications in containers, ensuring that they run the same regardless of the environment. Docker containers package applications with all their dependencies, allowing them to run consistently across different environments without the overhead of virtualization. This is why Docker is favored in modern DevOps pipelines, continuous integration&#x2F;continuous delivery (CI&#x2F;CD), and microservice architectures.<br>In summary, Docker (containerization) provides a lightweight, efficient, and fast alternative to virtualization when running applications, especially in environments where agility, scalability, and performance are crucial.</p>
+<p>Kubernetes and Docker serve different but complementary roles in container orchestration and management:</p>
+<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><p>Containerization: Docker is a platform for creating, deploying, and managing containers. It allows you to package applications and their dependencies into standardized units called containers.<br>Image Management: Docker enables you to build and manage container images, which can be stored in repositories and easily shared.<br>Development Environment: Docker simplifies the development process by ensuring that applications run the same way in development, testing, and production environments.</p>
+<h1 id="Kubernetes"><a href="#Kubernetes" class="headerlink" title="Kubernetes"></a>Kubernetes</h1><p>Orchestration: Kubernetes is a container orchestration platform. It manages the deployment, scaling, and operation of containers across a cluster of machines.<br>Resource Management: Kubernetes handles load balancing, scaling (up and down based on demand), service discovery, and fault tolerance for your containerized applications.<br>Multi-Container Management: While Docker manages individual containers, Kubernetes manages groups of containers and the overall architecture, making it easier to deploy microservices and complex applications.<br>Summary<br>Docker is focused on building and running individual containers.<br>Kubernetes is focused on managing clusters of containers and ensuring they run efficiently and reliably.<br>In practice, you often use both together: Docker to create the containers and Kubernetes to orchestrate them.</p>
+<hr>
+<p>Sources :</p>
+<p>Image - <a target="_blank" rel="noopener" href="https://www.bretfisher.com/kubernetes-vs-docker/">https://www.bretfisher.com/kubernetes-vs-docker/</a></p>
+<p>Image - <a target="_blank" rel="noopener" href="https://www.starwindsoftware.com/blog/virtualization/">https://www.starwindsoftware.com/blog/virtualization/</a></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/Docker/index.html" data-id="cm2dmbuad0002e8p39sby9dpg" data-title="Docker" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/Docker/index.html" data-id="cm2dn77j10002hnq75xv9dkzp" data-title="Docker" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
